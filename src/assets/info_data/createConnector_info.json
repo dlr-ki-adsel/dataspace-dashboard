@@ -1,0 +1,4 @@
+{
+    "title": "Create a New Connector",
+    "body": "**Connector Name:**  \nMust be 1-20 characters long.  \nOnly lowercase letters (a-z), numbers (0-9), and dashes (-) are allowed.  \nCannot start or end with a dash. "
+}

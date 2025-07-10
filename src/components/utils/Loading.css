@@ -1,0 +1,13 @@
+.spinner {
+  position: fixed; /* Position relative to the viewport */
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Adjust for element dimensions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it appears above other elements */
+  background-color: rgba(255, 255, 255, 0); /* Optional: Add a semi-transparent background */
+  width: 100vw; /* Optional: Cover the entire viewport */
+  height: 100vh; /* Optional: Cover the entire viewport */
+}

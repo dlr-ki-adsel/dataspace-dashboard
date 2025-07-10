@@ -1,0 +1,77 @@
+@import './colors.css';
+
+/* General page setup */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 100%; /* Make the container take the full width of the parent */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Toolbar and search bar styling */
+[role="toolbar"] {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; /* Vertical centering */
+  position: relative !important;
+  padding-left: 60px !important; /* Give space for the toolbar to be centered */
+  padding-right: 100px !important; /* Extra space for the user buttons */
+  height: 64px !important; /* Force consistent height */
+}
+
+/* Target the toolbar content */
+[role="toolbar"] > div {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; /* Vertical centering */
+  position: relative !important;
+  height: 100% !important;
+}
+
+/* Position specific elements */
+.search-container {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important; /* Center vertically */
+  transform: translate(-50%, -50%) !important; /* Center both horizontally and vertically */
+  z-index: 1;
+  width: 400px !important;
+  height: 40px !important; /* Consistent height */
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Make sure the theme switcher stays on the right with enough room */
+.theme-switcher-container {
+  position: absolute !important;
+  right: 80px !important; /* Much more space to avoid overlapping with user icon */
+  top: 50% !important; /* Center vertically */
+  transform: translateY(-50%) !important; /* Center vertically */
+  height: 40px !important; /* Consistent height */
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Ensure all toolbar buttons have the same vertical alignment */
+[role="toolbar"] button,
+[role="toolbar"] .MuiIconButton-root {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  vertical-align: middle !important;
+}
+
+/* Fix input field height */
+.search-container .MuiInputBase-root {
+  height: 40px !important;
+}
