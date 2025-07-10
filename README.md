@@ -64,3 +64,7 @@ The project includes several tools to maintain code quality:
     ```bash
     npm run build
     ```
+
+## License
+
+This project is licensed under the [Polyform Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).
