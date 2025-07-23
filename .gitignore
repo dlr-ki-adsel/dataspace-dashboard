@@ -25,5 +25,4 @@ dist-ssr
 kubeconfig-dev.yaml
 kubeconfig-prod.yaml
 kubeconfig-*
-.env*
-*.svg
+.env
